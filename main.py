@@ -6,12 +6,6 @@ app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///database.db"
 db.init_app(app)
 
-@im.user_loader
-def user_loader(id):
-
-@app.route('/')
-def home():
-    return render_template('home.html')
 
 @app.route('/registrar', methods=['GET', 'POST'])
 def registrar():
