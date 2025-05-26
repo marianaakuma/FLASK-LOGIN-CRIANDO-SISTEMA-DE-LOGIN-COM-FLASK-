@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Usuários Cadastrados</title>
+</head>
+<body>
+    <h2>Usuários Cadastrados</h2>
+    <ul>
+        {% for usuario in usuarios %}
+            <li>Email: {{ usuario.email }} | Senha: {{ usuario.senha }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/cadastro">Cadastrar novo usuário</a>
+</body>
+</html>
